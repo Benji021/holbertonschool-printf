@@ -1,5 +1,5 @@
 #include "main.h"
-#include "function.c"
+
 
 
 int _printf(const char *format, ...)
@@ -18,19 +18,22 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			switch (*format)
+			if (*format == 'c')
 			{
-				case 'c':
-					_printchar(va_arg(args, int));
-					break;
-				case 's':
-					_printstring(va_arg(args, char*));
-					break;
-				case '%':
-					_printchar(va_arg(args, int));
-				default:
-					continue;
-						break;
+				_printchar(va_arg(args, int));
+			}
+			if (*format == 's')
+			{
+				_printstring(va_arg(args, char*));
+			}
+			if (*format == '%')
+			{
+				_printchar(va_arg(args, int));
+			}
+			if (*format != 'c' || *format != 's' || *format != '%')
+			{
+				_printchar('E');
+				return(-1);
 			}
 		}
 		else
@@ -39,6 +42,7 @@ int _printf(const char *format, ...)
 		}
 		format++;
 	}
+	_printchar('\n');
 	va_end(args);
 	return (0);
 }
