@@ -42,7 +42,6 @@ int _printf(const char *format, ...)
 		}
 		format++;
 	}
-	_printchar('\n');
 	va_end(args);
 	return (0);
 }
