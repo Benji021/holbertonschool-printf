@@ -45,14 +45,13 @@ The program runs in a relative simple way and is fairly sequential. It prints th
 here are some flowchart which will details the process more deeply : 
 
 - [flowchart printf](C:\Users\benja\OneDrive\Images\Holberton Flowchart\Flowchart Printf)
-- [flowchart handleformat](C:\Users\benja\OneDrive\Images\Holberton Flowchart\Flowchart Printf)
+- [flowchart handleformat](C:\Users\benja\OneDrive\Images\Holberton Flowchart\Flowchart handleformat)
 
 
 **Instructions**
 
 To use this function fork the repository,
-Compile all the c file and the header together
-    for gcc user: gcc -Wall -Werror -Wextra -Wno-format *.c *.h -o _printf
+Compile all the c file and the header together for gcc user: gcc -Wall -Werror -Wextra -Wno-format *.c *.h -o _prif
 
 Running the program will use our own test file, however you can modify the test file to run your own test. 
 
