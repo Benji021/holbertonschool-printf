@@ -25,7 +25,7 @@ int handle_integer(va_list arguments_list)
 	int len_integer;
 	int integer = va_arg(arguments_list, int);
 
-	/* Variable will store the string values as integers */
+	/* Variable will store the integers values as a string */
 	char buffer[50];
 
 	sprintf(buffer, "%d", integer);
