@@ -4,7 +4,7 @@ This File contains a descprition of the program that aims to recreate the builti
 
 Printf stands for print formatted data and as its name implies it will display on the monitor data which have been formatted data. it takes 2 arguments. See prototype below :
 
-# int printf(const char *format, ...);
+### int printf(const char *format, ...);
 
 - format is a the string that contains text and specific format identifiers.
 - ...  tells us that printf is a variadic function. 
@@ -29,9 +29,10 @@ char *lunch = 'a lot';
 printf("My name starts with a %c and I ate %s today.", letter, lunch);
 return (0);
 }
-OUTPUT : My name starts with a E and I ate a lot today.
 
-Things to look for:
+**OUTPUT** : My name starts with a E and I ate a lot today.
+
+**Things to look for:**
 
 - % is followed by a character to indicate the expected format, let's call it format identifier.  
 - the function printf return the number of characters printed
@@ -43,8 +44,8 @@ The program runs in a relative simple way and is fairly sequential. It prints th
 
 here are some flowchart which will details the process more deeply : 
 
-[flowchart printf](Flowcharts/_printf(main).jpg)
-[flowchart handleformat](Flowcharts/Handle_format(subroutine).jpg)
+- [flowchart printf](Flowcharts/_printf(main).jpg)
+- [flowchart handleformat](Flowcharts/Handle_format(subroutine).jpg)
 
 
 
