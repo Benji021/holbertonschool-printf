@@ -41,5 +41,10 @@ Things to look for:
 
 The program runs in a relative simple way and is fairly sequential. It prints the strings till it reaches a format identifier, then looks for the argument to print according to its format and keeps on doing so till the end of the string is reached. 
 
-here are some flowchart which will details the process more deeply. 
+here are some flowchart which will details the process more deeply : 
+
+[flowchart printf](Flowcharts/_printf(main).jpg)
+[flowchart handleformat](Flowcharts/Handle_format(subroutine).jpg)
+
+
 
