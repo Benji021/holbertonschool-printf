@@ -1,0 +1,48 @@
+NAME
+	_printf
+
+LIBRARY
+	none,
+	custom header file is main.h
+
+SYNOPSIS
+	#include "main.h"
+
+	int _printf(const char* format, ...);
+
+	prerequesites : format.c outputformat.c print.c main.h
+
+DESCRIPTION
+	The _printf functions produces an output according to a specific format to the stdout (standard output).
+	To do so most of the output uses syscall write, i.e write(1, &c, 1).
+
+	Format of the format string:
+	The format string is made of character and behave as exepected when facing escape characters.
+	The format string can include directive using format specifier or not.
+	The directive are typed in the format string using the format specifier '%'.
+
+	Handling of format specifier :
+	The format specifiers do not handle precision, width or length modifier.
+
+	Flag characters:
+	The format specifier % can by followed by one and only one flag. See list of flags below:
+
+	c	_printf will retrive the next argument and print it as a char,
+	s	_printf will retrive the next argument and print it as a string,
+	d	_printf will retrive the next argument and print it as string of digit,
+	i	_printf will retrive the next argument and print it as a string of digit.
+
+	Default behaviour:
+	If the flag character is unknown the _printf function will default to the printing the character as is.
+
+	Error handling:
+	Unless the format string and the arguments are NULL, there is no error handling._printf will use its default behaviour.
+	Therefore if flag is unknow and argument is a string, the output will not be the desired one.
+
+RETURN VALUE
+	Once reaching the end, _printf will return the numbers of bytes (characters) printed, excluding the null character ('\0').
+	Therefore it is totally possible to assign the _printf function to an int variable.
+
+
+
+
