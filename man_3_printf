@@ -43,6 +43,7 @@ RETURN VALUE
 	Once reaching the end, _printf will return the numbers of bytes (characters) printed, excluding the null character ('\0').
 	Therefore it is totally possible to assign the _printf function to an int variable.
 
+**author**
 
-
-
+PIGNOLET Benjamin https://github.com/Benji021
+SEGUIN Etienne https://github.com/bluelightwatcher
