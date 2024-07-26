@@ -44,8 +44,8 @@ The program runs in a relative simple way and is fairly sequential. It prints th
 
 here are some flowchart which will details the process more deeply : 
 
-- [flowchart printf](Flowcharts/_printf(main).jpg)
-- [flowchart handleformat](Flowcharts/Handle_format(subroutine).jpg)
+- [flowchart printf](C:\Users\benja\OneDrive\Images\Holberton Flowchart\Flowchart Printf)
+- [flowchart handleformat](C:\Users\benja\OneDrive\Images\Holberton Flowchart\Flowchart Printf)
 
 
 **Instructions**
