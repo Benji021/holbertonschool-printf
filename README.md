@@ -48,4 +48,15 @@ here are some flowchart which will details the process more deeply :
 - [flowchart handleformat](Flowcharts/Handle_format(subroutine).jpg)
 
 
+**Instructions**
 
+To use this function fork the repository,
+Compile all the c file and the header together
+    for gcc user: gcc -Wall -Werror -Wextra -Wno-format *.c *.h -o _printf
+
+Running the program will use our own test file, however you can modify the test file to run your own test. 
+
+**author**
+
+PIGNOLET Benjamin https://github.com/Benji021
+SEGUIN Etienne https://github.com/bluelightwatcher
